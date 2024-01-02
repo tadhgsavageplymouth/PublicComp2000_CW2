@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The root layout for the AboutActivity screen -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_200"
+    tools:context=".AboutActivity">
+
+    <!-- Title TextView -->
+    <TextView
+        android:id="@+id/tvAboutTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About:"
+        android:textSize="24sp"
+        android:textColor="@color/purple_500"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"/>
+
+    <!-- Description TextView -->
+    <TextView
+        android:id="@+id/tvAboutDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Discover The Pier Ristorante in Plymouth's historic Barbican district, where seafood meets Italian culinary excellence. We're dedicated to sourcing the freshest local catches, offering a menu that marries the flavors of Italy with the South West's oceanic bounty. Whether you dine indoors or on our scenic terrace, our chefs craft unforgettable dishes, making every meal a celebration. Join us for an unforgettable culinary journey that showcases Plymouth's maritime heritage and the allure of the Barbican."
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:padding="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvAboutTitle"
+        android:layout_marginTop="10dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

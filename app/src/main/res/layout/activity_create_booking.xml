@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Scrollable view for the booking screen -->
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <!-- Linear layout to hold UI elements -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/purple_200"
+        android:padding="16dp">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Book Your Table"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp"
+            android:textColor="@color/white"/>
+
+        <!-- CalendarView with Border -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/calendar_border">
+
+            <CalendarView
+                android:id="@+id/calendarView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"/>
+
+        </FrameLayout>
+
+        <!-- Table Size Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please Select a Table Size"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/white"/>
+
+        <!-- Table Size Spinner -->
+        <Spinner
+            android:id="@+id/spinnerTableSize"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:entries="@array/table_sizes"
+            android:layout_marginTop="8dp"
+            android:background="@color/lavender"/>
+
+        <!-- Table Time Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please Select a Time"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/white"/>
+
+        <!-- Table Time Spinner -->
+        <Spinner
+            android:id="@+id/spinnerTableTime"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:entries="@array/table_times"
+            android:layout_marginTop="8dp"
+            android:background="@color/lavender"/>
+
+        <!-- Book Button -->
+        <Button
+            android:id="@+id/buttonBook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Book Table"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/white"
+            android:background="@color/purple_500"/>
+
+    </LinearLayout>
+</ScrollView>

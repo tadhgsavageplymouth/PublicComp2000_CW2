@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Scrollable view for editing a booking -->
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <!-- Linear layout to hold UI elements -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/purple_200"
+        android:padding="16dp">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit Your Booking"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- CalendarView for date selection -->
+        <CalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Table Size Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select a Table Size"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <!-- Table Size Spinner for table size selection -->
+        <Spinner
+            android:id="@+id/spinnerTableSize"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:entries="@array/table_sizes"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Table Time Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select a Time"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <!-- Table Time Spinner for time selection -->
+        <Spinner
+            android:id="@+id/spinnerTableTime"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:entries="@array/table_times"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Save Button to confirm changes -->
+        <Button
+            android:id="@+id/buttonSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Changes"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center_horizontal"/>
+
+    </LinearLayout>
+</ScrollView>

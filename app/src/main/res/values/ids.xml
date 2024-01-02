@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="restaurantName" type="id" />
+    <item name="btnLunchBooking" type="id" />
+    <item name="btnDinnerBooking" type="id" />
+    <item name="btnManageBookings" type="id" />
+    <item name="btnReviews" type="id" />
+    <item name="btnBookingHistory" type="id" />
+    <item name="btnAbout" type="id" />
+    <item name="btnPreferences" type="id" />
+    <item name="btnContact" type="id" />
+    <item name="tvContactHeading" type="id" />
+    <item name="userName" type="id" />
+    <item name="logout" type="id" />
+</resources>

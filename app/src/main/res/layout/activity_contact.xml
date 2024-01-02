@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Root layout for the ContactActivity screen -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_200"
+    tools:context=".ContactActivity">
+
+    <!-- Heading TextView -->
+    <TextView
+        android:id="@+id/tvContactHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact Details"
+        android:textSize="24sp"
+        android:textColor="@color/purple_500"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        />
+
+    <!-- Phone Number TextView -->
+    <TextView
+        android:id="@+id/tvPhoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone Number: 01752 911912"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:autoLink="phone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvContactHeading"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        tools:ignore="UnknownId"
+        />
+
+    <!-- Email TextView -->
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email: ThePierRistorante@gmail.com"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:autoLink="email"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvPhoneNumber"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        tools:ignore="UnknownId"
+        />
+
+    <!-- Address TextView -->
+    <TextView
+        android:id="@+id/tvAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address: The Pier Ristorante, 12A The Barbican, Plymouth PL1 2LS"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvEmail"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        tools:ignore="UnknownId"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

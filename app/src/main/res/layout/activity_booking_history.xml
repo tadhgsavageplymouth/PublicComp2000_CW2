@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <!-- ListView for displaying booking history -->
+    <ListView
+        android:id="@+id/lvBookingHistory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/black"
+        android:dividerHeight="1dp"
+        android:listSelector="@color/purple_200" />
+
+    <!-- No bookings text view -->
+    <TextView
+        android:id="@+id/tvNoBookings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No bookings found"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:textSize="18sp"
+        android:textColor="@color/black" />
+</LinearLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Root LinearLayout for the Preferences screen -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/purple_200">
+
+    <!-- Title for the Preferences screen -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/preferences"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:paddingBottom="16dp"
+        android:textColor="@color/purple_500" />
+
+    <!-- Email Notifications Switch -->
+    <Switch
+        android:id="@+id/switchEmail"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="@string/email_notifications"
+        android:textColor="@color/purple_700"
+        android:paddingBottom="8dp"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <!-- SMS Notifications Switch -->
+    <Switch
+        android:id="@+id/switchSMS"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="@string/sms_notifications"
+        android:textColor="@color/purple_700"
+        android:paddingBottom="8dp"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <!-- Push Notifications Switch -->
+    <Switch
+        android:id="@+id/switchPushNotifications"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="@string/push_notifications"
+        android:textColor="@color/purple_700"
+        android:paddingBottom="16dp"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <!-- Preferred Table Selector Title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/preferred_table"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/purple_700"
+        android:paddingBottom="8dp" />
+
+    <!-- Spinner for selecting preferred table -->
+    <Spinner
+        android:id="@+id/spinnerPreferredTable"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:entries="@array/table_numbers" />
+
+</LinearLayout>

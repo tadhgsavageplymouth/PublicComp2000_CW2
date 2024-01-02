@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ScrollView to enable scrolling on smaller screens -->
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <!-- Linear layout to arrange elements vertically -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/purple_200"
+        android:padding="16dp">
+
+        <!-- Title for the Manage My Bookings screen -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Manage My Bookings"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- RecyclerView to display bookings -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewBookings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/lavender"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Placeholder for additional UI elements (if any) -->
+
+    </LinearLayout>
+</ScrollView>

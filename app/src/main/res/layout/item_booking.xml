@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Root LinearLayout for each booking item -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/purple_200"
+    android:layout_margin="8dp">
+
+    <!-- Horizontal LinearLayout for Date, Table Size, and Table Time -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <!-- Date -->
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Date: --/--/----"
+            android:textSize="16sp"
+            android:textColor="@color/black" />
+
+        <!-- Table Size -->
+        <TextView
+            android:id="@+id/tvTableSize"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Table Size: --"
+            android:textSize="16sp"
+            android:textColor="@color/black" />
+
+        <!-- Table Time -->
+        <TextView
+            android:id="@+id/tvTableTime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Table Time: --:--"
+            android:textSize="16sp"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <!-- Horizontal LinearLayout for Edit and Delete Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <!-- Edit Button -->
+        <Button
+            android:id="@+id/btnEditBooking"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Edit" />
+
+        <!-- Delete Button -->
+        <Button
+            android:id="@+id/btnDeleteBooking"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Delete"
+            android:backgroundTint="@color/red" />
+    </LinearLayout>
+
+</LinearLayout>

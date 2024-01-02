@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">The Pier Ristaronte</string>
+    <string name="preferences">Preferences</string>
+    <string name="email_notifications">Email Notifications</string>
+    <string name="sms_notifications">SMS Notifications</string>
+    <string name="push_notifications">Push Notifications</string>
+    <string name="preferred_table">Preferred Table</string>
+
+    <!-- Table sizes -->
+    <string-array name="table_sizes">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+
+    <!-- Table times -->
+    <string-array name="table_times">
+        <item>11:00</item>
+        <item>12:00</item>
+        <item>13:00</item>
+        <item>14:00</item>
+        <item>15:00</item>
+        <item>18:00</item>
+        <item>19:00</item>
+        <item>20:00</item>
+        <item>21:00</item>
+        <item>22:00</item>
+    </string-array>
+
+    <!-- Table numbers -->
+    <string-array name="table_numbers">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+</resources>
