@@ -41,3 +41,8 @@ Click the 'Run' button (green triangle) to start the emulator and launch the app
 Testing the App:
 
 Interact with the app on the emulator to test its features.
+
+Credits:
+App Icon Created using Dalle 
+Firebase: https://console.firebase.google.com/
+Firebase Log in and Sign up aid:https://androidknowledge.com/
